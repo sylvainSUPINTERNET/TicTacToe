@@ -23,6 +23,7 @@ class PlayController: UIViewController {
     //cache data
     let joueur1_cache = UserDefaults.standard.value(forKey: "joueur1") as? String
     let joueur2_cache = UserDefaults.standard.value(forKey: "joueur2") as? String
+    
     let win_count_j1_cache = UserDefaults.standard.value(forKey: "win_j1") as? Int
     let win_count_j2_cache = UserDefaults.standard.value(forKey: "win_j2") as? Int
     
@@ -96,11 +97,13 @@ class PlayController: UIViewController {
                         self.victory = true;
                         let count = self.win_count_j2 + 1
                          UserDefaults.standard.set(count, forKey: "win_j2")
+                        
                     }else{
                         self.winner = self.joueur1;
                         self.victory = true;
                         let count = self.win_count_j1 + 1
                          UserDefaults.standard.set(count, forKey: "win_j1")
+
                        
                     }
                     
@@ -119,11 +122,13 @@ class PlayController: UIViewController {
                         self.victory = true;
                         let count = self.win_count_j2 + 1
                             UserDefaults.standard.set(count, forKey: "win_j2")
+
                     }else{
                         self.winner = self.joueur1;
                         self.victory = true;
                         let count = self.win_count_j1 + 1
                         UserDefaults.standard.set(count, forKey: "win_j1")
+
                     }
                 }
             }else{
@@ -140,11 +145,13 @@ class PlayController: UIViewController {
                         self.victory = true;
                          let count = self.win_count_j2 + 1
                              UserDefaults.standard.set(count, forKey: "win_j2")
+
                     }else{
                         self.winner = self.joueur1;
                         self.victory = true;
                          let count = self.win_count_j1 + 1
                         UserDefaults.standard.set(count, forKey: "win_j1")
+
                     }
 
                 }
@@ -163,11 +170,13 @@ class PlayController: UIViewController {
                         self.victory = true;
                         let count = self.win_count_j2 + 1
                              UserDefaults.standard.set(count, forKey: "win_j2")
+
                     }else{
                         self.winner = self.joueur1;
                         self.victory = true;
                         let count = self.win_count_j1 + 1
                          UserDefaults.standard.set(count, forKey: "win_j1")
+
                     }
 
                 }
@@ -184,11 +193,13 @@ class PlayController: UIViewController {
                         self.victory = true;
                         let count = self.win_count_j2 + 1
                         UserDefaults.standard.set(count, forKey: "win_j2")
+
                     }else{
                         self.winner = self.joueur1;
                         self.victory = true;
                         let count = self.win_count_j1 + 1
                          UserDefaults.standard.set(count, forKey: "win_j1")
+
                     }
 
                 }
@@ -206,11 +217,13 @@ class PlayController: UIViewController {
                         self.victory = true;
                         let count = self.win_count_j2 + 1
                         UserDefaults.standard.set(count, forKey: "win_j2")
+
                     }else{
                         self.winner = self.joueur1;
                         self.victory = true;
                         let count = self.win_count_j1 + 1
                           UserDefaults.standard.set(count, forKey: "win_j1")
+
                     }
 
                 }
@@ -230,6 +243,7 @@ class PlayController: UIViewController {
                         let count = self.win_count_j2 + 1
 
                          UserDefaults.standard.set(count, forKey: "win_j2")
+
                         
                     }else{
                         self.winner = self.joueur1;
@@ -237,6 +251,7 @@ class PlayController: UIViewController {
                         let count = self.win_count_j1 + 1
 
                           UserDefaults.standard.set(count, forKey: "win_j1")
+
                     }
 
                 }
@@ -254,12 +269,14 @@ class PlayController: UIViewController {
                         let count = self.win_count_j2 + 1
 
                          UserDefaults.standard.set(count, forKey: "win_j2")
+
                     }else{
                         self.winner = self.joueur1;
                         self.victory = true;
                         let count = self.win_count_j1 + 1
 
                            UserDefaults.standard.set(count, forKey: "win_j1")
+
                     }
 
                 }
@@ -285,6 +302,9 @@ class PlayController: UIViewController {
                 self.win_count_j2 = UserDefaults.standard.integer(forKey: "win_j2")
                 
                 print(self.win_count_j1);
+            
+
+
                 print("---------")
                 
             }else{
@@ -306,6 +326,9 @@ class PlayController: UIViewController {
             self.win_count_j1 = UserDefaults.standard.integer(forKey: "win_j1")
             print("Win j2 = \(UserDefaults.standard.integer(forKey: "win_j2"))")
             self.win_count_j2 = UserDefaults.standard.integer(forKey: "win_j2")
+            
+            print("winner : " + UserDefaults.standard.string(forKey: "winner")!);
+
             
             print(self.win_count_j1);
             print("---------")
@@ -351,6 +374,7 @@ class PlayController: UIViewController {
                     //j1 ragequit donc j2 cache win count ++
                     let count = self.win_count_j2 + 1
                     UserDefaults.standard.set(count, forKey: "win_j2")
+
                 }else{
                     //j2 ragequit donc j1 cache win count ++
                     let count = self.win_count_j1 + 1

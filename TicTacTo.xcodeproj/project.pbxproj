@@ -15,6 +15,7 @@
 		4A87512D1FA08589006C308D /* TicTacToTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A87512C1FA08589006C308D /* TicTacToTests.swift */; };
 		4A8751381FA08589006C308D /* TicTacToUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8751371FA08589006C308D /* TicTacToUITests.swift */; };
 		4A8751461FA08BEE006C308D /* PlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8751451FA08BEE006C308D /* PlayController.swift */; };
+		4AA78C071FB07A6B00EB10B8 /* LastTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA78C061FB07A6B00EB10B8 /* LastTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		4A8751371FA08589006C308D /* TicTacToUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToUITests.swift; sourceTree = "<group>"; };
 		4A8751391FA08589006C308D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A8751451FA08BEE006C308D /* PlayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayController.swift; sourceTree = "<group>"; };
+		4AA78C061FB07A6B00EB10B8 /* LastTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				4A87511E1FA08589006C308D /* Assets.xcassets */,
 				4A8751201FA08589006C308D /* LaunchScreen.storyboard */,
 				4A8751231FA08589006C308D /* Info.plist */,
+				4AA78C061FB07A6B00EB10B8 /* LastTableViewController.swift */,
 			);
 			path = TicTacTo;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				4A87511A1FA08588006C308D /* ViewController.swift in Sources */,
 				4A8751461FA08BEE006C308D /* PlayController.swift in Sources */,
 				4A8751181FA08588006C308D /* AppDelegate.swift in Sources */,
+				4AA78C071FB07A6B00EB10B8 /* LastTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
