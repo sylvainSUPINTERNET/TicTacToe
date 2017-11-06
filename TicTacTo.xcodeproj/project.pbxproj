@@ -14,6 +14,7 @@
 		4A8751221FA08589006C308D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A8751201FA08589006C308D /* LaunchScreen.storyboard */; };
 		4A87512D1FA08589006C308D /* TicTacToTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A87512C1FA08589006C308D /* TicTacToTests.swift */; };
 		4A8751381FA08589006C308D /* TicTacToUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8751371FA08589006C308D /* TicTacToUITests.swift */; };
+		4A8751461FA08BEE006C308D /* PlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8751451FA08BEE006C308D /* PlayController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4A8751331FA08589006C308D /* TicTacToUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A8751371FA08589006C308D /* TicTacToUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToUITests.swift; sourceTree = "<group>"; };
 		4A8751391FA08589006C308D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A8751451FA08BEE006C308D /* PlayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				4A8751171FA08588006C308D /* AppDelegate.swift */,
 				4A8751191FA08588006C308D /* ViewController.swift */,
+				4A8751451FA08BEE006C308D /* PlayController.swift */,
 				4A87511B1FA08588006C308D /* Main.storyboard */,
 				4A87511E1FA08589006C308D /* Assets.xcassets */,
 				4A8751201FA08589006C308D /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A87511A1FA08588006C308D /* ViewController.swift in Sources */,
+				4A8751461FA08BEE006C308D /* PlayController.swift in Sources */,
 				4A8751181FA08588006C308D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +509,7 @@
 				4A87513E1FA08589006C308D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A87513F1FA08589006C308D /* Build configuration list for PBXNativeTarget "TicTacToTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +518,7 @@
 				4A8751411FA08589006C308D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A8751421FA08589006C308D /* Build configuration list for PBXNativeTarget "TicTacToUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +527,7 @@
 				4A8751441FA08589006C308D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
