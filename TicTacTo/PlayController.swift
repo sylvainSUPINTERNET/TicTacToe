@@ -345,6 +345,18 @@ class PlayController: UIViewController {
     
     @IBAction func closePlayModal(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: {
+            if(self.victory == false){
+                //rage quit
+                if(self.turn == 1){
+                    //j1 ragequit donc j2 cache win count ++
+                    let count = self.win_count_j2 + 1
+                    UserDefaults.standard.set(count, forKey: "win_j2")
+                }else{
+                    //j2 ragequit donc j1 cache win count ++
+                    let count = self.win_count_j1 + 1
+                    UserDefaults.standard.set(count, forKey: "win_j1")
+                }
+            }
             self.parentController?.reloadValueStat();
         })
     }
